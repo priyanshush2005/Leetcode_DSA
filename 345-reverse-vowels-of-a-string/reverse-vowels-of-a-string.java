@@ -1,9 +1,8 @@
 class Solution {
     public String reverseVowels(String st) {
-        int n = st.length();
         char ch[] = st.toCharArray();
         int s = 0;
-        int e = n-1;
+        int e = st.length()-1;
         String arr = "aeiouAEIOU";
         while(e>s){
             while(s<e && arr.indexOf(ch[s])==-1){
